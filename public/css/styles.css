@@ -1,0 +1,270 @@
+/* Tag Selectors */
+
+* {
+    cursor: none;
+}
+
+a {
+    cursor: none;
+    z-index: 3;
+    position: relative;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+::selection {
+    /* background-color: #b9d7ea; */
+    background-color: #19d3da;
+    color: #fff
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+@media (max-width: 768px) {
+     ::-webkit-scrollbar {
+        width: 15px;
+    }
+}
+
+::-webkit-scrollbar-track {
+    border: 5px solid #e4f9f5;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: linear-gradient( 45deg, #70adb5, #a6e3e9); */
+    background: linear-gradient( 45deg, #70adb5, #343a40);
+}
+
+
+/* Class Selectors */
+
+.biggestHead {
+    padding-top: 1rem;
+    font-size: 4rem;
+    /* text-align: left; */
+    font-family: 'Major Mono Display', monospace;
+}
+
+.bigHead {
+    padding-top: 1rem;
+    font-size: 3.5rem;
+    /* text-align: left; */
+    font-family: 'Major Mono Display', monospace;
+}
+
+.bigHead2 {
+    padding-top: 0.5rem;
+    font-size: 3rem;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.btn-dark {
+    color: #19d3da;
+    position: relative;
+    cursor: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+/*, .carousel-indicators */
+
+{
+    filter: invert(100%);
+}
+
+.carouselSpacing {
+    margin: 2rem;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.coloredSection {
+    padding: 3rem 5rem;
+    /* Polka-Dot Background  */
+    background-color: #f4f7f7;
+    /* background: #e3fdfd; 
+    background-image: radial-gradient(#e6e6e6 10%, transparent 0), radial-gradient(#e6e6e6 10%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px; */
+}
+
+.contactForm {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem 4rem 4rem;
+    margin: 0 auto;
+}
+
+.contactHead {
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.cursor {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #0a043c;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 2;
+}
+
+.footer {
+    text-align: center;
+    /* position: absolute; */
+    width: 100%;
+    height: 3.5rem;
+    background-color: #70adb5;
+}
+
+.footerContent {
+    padding-top: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.formPadding {
+    padding: 3rem;
+}
+
+.grow {
+    transform: scale(1.7);
+    background-color: #0a043c;
+    border-color: #0a043c;
+}
+
+.introImage {
+    width: 550px;
+    display: block;
+    margin: auto auto auto auto;
+    background-color: #cafc40;
+    border-radius: 20%;
+}
+
+.introImgDiv {
+    /* box-shadow: 2px 2px 5px #030303; */
+}
+
+@media (max-width: 768px) {
+    .introImage {
+        width: 400px;
+        display: block;
+        padding: 0;
+        margin: auto auto auto auto;
+    }
+}
+
+.link {
+    color: #b83b5e;
+}
+
+.link:hover {
+    color: #19d3da;
+    text-decoration: none;
+}
+
+.myLogo {
+    padding-bottom: 0;
+}
+
+.myLogoText {
+    color: #19d3da;
+    /* color: cyan; */
+    font-size: 1.8rem;
+    font-family: 'Major Mono Display', monospace;
+    margin-bottom: 0.3rem;
+}
+
+.navbarSpacing {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.navLink {
+    font-size: 1.05rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #70adb5;
+}
+
+.navLink:hover {
+    color: #19d3da;
+}
+
+.paddingTopBottom {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.projectSpace {
+    padding: 0;
+    margin: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.snippetsTitle {
+    text-align: left;
+}
+
+.snippetsBody {
+    text-align: left;
+    color: #495464;
+    font-size: 1.0rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.SubscriptionStatus {
+    text-align: center;
+}
+
+.test-img {
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.textContent {
+    color: #495464;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.whiteSection {
+    /* margin: 2rem; */
+    padding: 3rem 5rem;
+}
+
+.unimportant {
+    text-align: center;
+    color: #909596;
+    font-size: 0.7rem;
+}
+
+
+/* ID Selectors */
+
+@media (max-width: 768px) {
+    #about-carousel {
+        margin: 0;
+        padding: 0;
+    }
+    #about-carousel img {
+        width: 400px;
+    }
+}
+
+#cursor {}

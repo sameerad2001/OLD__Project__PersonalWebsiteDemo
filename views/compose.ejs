@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+
+    <form action="/compose" method="POST">
+
+        <div class="container-fluid formPadding">
+
+            <div class="form-group">
+
+                <label> Title </label>
+                <input type="text" name="postTitle" class="form-control" autofocus autocomplete="off">
+
+                <label> Content </label>
+                <textarea name="postText" cols="30" rows="10" class="form-control"></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-dark">Publish </button>
+
+        </div>
+
+    </form>
+
+    <%-include("partials/footer")%>

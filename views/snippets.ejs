@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+
+    <section class="whiteSection">
+
+        <div class="container-fluid">
+            <h1 class="bigHead snippetsTitle">Snippets</h1>
+            <p class="snippetsBody"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At tellus at urna condimentum mattis pellentesque. Magna ac placerat vestibulum lectus mauris. Luctus venenatis lectus
+                magna fringilla urna porttitor rhoncus dolor purus. Et netus et malesuada fames ac turpis. Ut consequat semper viverra nam libero justo. Nunc sed blandit libero volutpat sed cras ornare. Imperdiet sed euismod nisi porta lorem mollis. Morbi
+                blandit cursus risus at ultrices mi. Faucibus a pellentesque sit amet porttitor. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Varius duis at consectetur lorem donec. Eget magna fermentum iaculis eu non diam phasellus vestibulum.
+                Nunc sed blandit libero volutpat sed cras ornare arcu. Odio euismod lacinia at quis risus. Mi bibendum neque egestas congue quisque egestas. Ut sem viverra aliquet eget. Pulvinar elementum integer enim neque volutpat.</p>
+
+
+            <% for(let i=0;i<posts.length;i++) { %>
+
+                <h1 class="bigHead snippetsTitle">
+                    <%= posts[i].title %>
+                </h1>
+
+                <p class="snippetsBody">
+                    <%= posts[i].text.substring(0,100)+"......" %>
+                        <a class="link" href="/<%= posts[i].title  %> ">Read More</a>
+                </p>
+
+                <% } %>
+
+        </div>
+
+    </section>
+
+    <%- include("partials/footer") %>

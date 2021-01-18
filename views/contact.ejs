@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+    <h1 class="bigHead contactHead"> Contact Me </h1>
+
+    <div class="container-fluid">
+
+        <form action="/contact" class="contactForm" method="POST">
+
+            <div class="form-group">
+
+                <input type="text" name="firstName" class="form-control" placeholder="First Name" autofocus autocomplete="off">
+                <input type="text" name="lastName" class="form-control" placeholder="Last Name" autofocus autocomplete="off">
+                <input type="email" name="email" class="form-control" autocomplete="off" placeholder="Email">
+
+            </div>
+
+            <button type="submit" class="btn btn-dark"> Submit </button>
+
+        </form>
+
+        <p class="text unimportant"> Emails Collected via MailChimp API; To know more please visit @ <a href="https://mailchimp.com/" class="link"> MailChimp </a></p>
+
+
+    </div>
+
+    <%- include("partials/footer") %>
